@@ -8,7 +8,7 @@ class SkillsMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
-      constraints: BoxConstraints(
+      constraints: const BoxConstraints(
         maxWidth: 500.0,
       ),
       child: Column(
