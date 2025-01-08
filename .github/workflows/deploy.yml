@@ -14,10 +14,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Install dependencies and build the project
-    - name: Install dependencies and build
+    # Step 2: build the project
+    - name: build
       run: |
-        flutter pub get
         flutter build web
 
     # Step 3: Configure AWS credentials
