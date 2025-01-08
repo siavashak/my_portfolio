@@ -2,6 +2,7 @@ How to create your Static website with custom domain on AWS:
 
 Step1: Route 53:
 	Register your domain, yoursitename.com for example.
+
 step2: AWS Certificate Manager:
 	request a certificate
 	Request a public certificate, click on "Next"
@@ -70,7 +71,6 @@ Step7: Route53:
 	
 Step8: CloudFront:
 	We might need to disable and re-enable the distributions to invalidate the cached contents. The changes might take some hours to reflect. 
-
 
 At this point your content sould be displayed on both S3 url and your sitename.com 
 
