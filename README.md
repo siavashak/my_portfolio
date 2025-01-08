@@ -74,4 +74,7 @@ Step8: CloudFront:
 
 At this point your content sould be displayed on both S3 url and your sitename.com 
 
-Step9: Install "Aws S3" plugin for VSCode.
+Step9: Install "Aws ToolKit" and "Github Actions" plugins for VSCode.
+
+step10: Add deploy.yml workflow under a new directory at .github/workflows/deploy.yml
+	this file contains the trigger and action for Continous Deployment.
