@@ -34,8 +34,12 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
 
-    # Step 5: Sync the build/web folder with S3
-    - name: Sync build/web with S3
+    # Step 5: Sync build/web with the first S3 bucket
+    - name: Sync to www.nevadawebsolutions.com bucket
       run: |
-        aws s3 sync build/web s3://your-bucket-name --delete
- 
+        aws s3 sync build/web s3://www.nevadawebsolutions.com --delete
+
+    # Step 6: Sync build/web with the second S3 bucket
+    - name: Sync to nevadawebsolutions.com bucket
+      run: |
+        aws s3 sync build/web s3://nevadawebsolutions.com --delete
