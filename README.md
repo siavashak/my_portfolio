@@ -76,7 +76,13 @@ At this point your content sould be displayed on both S3 url and your sitename.c
 
 Step9: Install "Aws ToolKit" and "Github Actions" plugins for VSCode.
 
-step10: Add deploy.yml workflow under a new directory at .github/workflows/deploy.yml
-	this file contains the trigger and action for Continous Deployment.
+step10: Create an IAM user with S3 access, then create an access key for it and save it somewhere safe.
 
-step11: 
+step11: On Github, go to the current repo, the last tab is Settings
+	Go to Secrets and Variable, Actions, new repository secret and for each of the three items below, add their corresponding values:
+	AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION
+
+Step12: Add deploy.yml workflow under a new directory at .github/workflows/deploy.yml
+	this file contains the trigger and action for Continous Deployment. 
+	make sure the AWS_SECRET_ACCESS_KEY variable name exactly matches the variable defined in the previous step. 
+	ex: aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
