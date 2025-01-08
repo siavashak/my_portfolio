@@ -22,8 +22,7 @@ class MainDesktop extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
-                  "Hi, \nI'm Siavash Akrami. \nWelcome to my portfolio :)",
+              const Text("Hi, \nI'm Siavash. \nWelcome to my portfolio :)",
                   style: TextStyle(
                     fontSize: 30.0,
                     height: 1.5,
