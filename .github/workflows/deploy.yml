@@ -14,19 +14,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Set up Flutter environment (if needed)
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: stable
-
-    # Step 3: Install dependencies and build the project
+    # Step 2: Install dependencies and build the project
     - name: Install dependencies and build
       run: |
         flutter pub get
         flutter build web
 
-    # Step 4: Configure AWS credentials
+    # Step 3: Configure AWS credentials
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
       with:
@@ -34,7 +28,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
 
-    # Step 5: Sync the build/web folder with S3
+    # Step 4: Sync the build/web folder with S3
     - name: Sync build/web with S3
       run: |
         aws s3 sync build/web s3://your-bucket-name --delete
