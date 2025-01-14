@@ -50,7 +50,7 @@ class MainMobile extends StatelessWidget {
                     foregroundColor: CustomColor.whitePrimary,
                   ),
                   onPressed: () {},
-                  child: const Text("Get in touch"),
+                  child: const Text("Get in Touch"),
                 ),
               )
             ]));
