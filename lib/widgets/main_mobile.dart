@@ -34,7 +34,8 @@ class MainMobile extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10),
-              const Text("Hi, \nI'm Siavash Akrami \nand this is my portfolio.",
+              const Text(
+                  "Hi, \nI'm Siavash. \nWelcome to my portfolio \nhosted on AWS S3 (WIP).",
                   style: TextStyle(
                     fontSize: 24,
                     height: 1.5,
