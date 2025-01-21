@@ -1,4 +1,3 @@
-
 class ProjectUtils {
   final String image;
   final String title;
@@ -22,7 +21,7 @@ List<ProjectUtils> workProjects = [
       image: "assets/projects/MimRoll.png",
       title: "Mim Roll Kabob",
       subtitle: "Mediterranean International Meal",
-      webLink: "https://www.mimrollkabob.com/",
+      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/",
       androidLink: "https://www.mimrollkabob.com/",
       iosLink: "https://www.mimrollkabob.com/"),
   ProjectUtils(
@@ -39,7 +38,7 @@ List<ProjectUtils> hobbyProjects = [
       image: "assets/projects/MimRoll.png",
       title: "Mim Roll Kabob",
       subtitle: "Mediterranean International Meal",
-      webLink: "https://www.mimrollkabob.com/"),
+      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),
   ProjectUtils(
       image: "assets/projects/BisimKart.png",
       title: "BisimKart",

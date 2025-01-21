@@ -6,7 +6,7 @@ Step1: Route 53:
 step2: AWS Certificate Manager:
 	request a certificate
 	Request a public certificate, click on "Next"
-	for Domain name enter *.yoursitename.com
+	for Domain name enter yoursitename.com (add any other names like www.yoursitename, support.yoursitename, developrs, etc.)
 	Validation: DNS validation - recommended
 	Key algorithm: RSA 2048
 	Click on "Request"
