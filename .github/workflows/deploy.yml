@@ -37,9 +37,9 @@ jobs:
     # Step 5: Sync build/web with the first S3 bucket
     - name: Sync to www.nevadawebsolutions.com bucket
       run: |
-        aws s3 sync build/web s3://www.nevadawebsolutions.com --delete
+        aws s3 sync build/web s3://www.nevadawebsolutions.com --delete --exclude "privacy-policy.html"
 
     # Step 6: Sync build/web with the second S3 bucket
     - name: Sync to nevadawebsolutions.com bucket
       run: |
-        aws s3 sync build/web s3://nevadawebsolutions.com --delete
+        aws s3 sync build/web s3://nevadawebsolutions.com --delete --exclude "privacy-policy.html"
