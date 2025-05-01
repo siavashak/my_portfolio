@@ -38,7 +38,8 @@ List<ProjectUtils> hobbyProjects = [
       image: "assets/projects/HackAirbnb.png",
       title: "Hack Airbnb",
       subtitle: "A Chrome Extension for Advanced Airbnb Search",
-      webLink: ""),
+      webLink: "https://www.youtube.com/watch?v=HGyfS9g3qUM",
+      androidLink: ""),
   ProjectUtils(
       image: "assets/projects/MimRoll.png",
       title: "Mim Roll Kabob",
