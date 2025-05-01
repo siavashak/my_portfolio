@@ -35,10 +35,15 @@ List<ProjectUtils> workProjects = [
 
 List<ProjectUtils> hobbyProjects = [
   ProjectUtils(
+      image: "assets/projects/HackAirbnb.png",
+      title: "Hack Airbnb",
+      subtitle: "A Chrome Extension for Advanced Airbnb Search",
+      webLink: ""),
+  ProjectUtils(
       image: "assets/projects/MimRoll.png",
       title: "Mim Roll Kabob",
       subtitle: "Mediterranean International Meal",
-      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),
+      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),      
   ProjectUtils(
       image: "assets/projects/BisimKart.png",
       title: "BisimKart",
