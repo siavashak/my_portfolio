@@ -39,12 +39,13 @@ List<ProjectUtils> hobbyProjects = [
       title: "Hack Airbnb",
       subtitle: "A Chrome Extension for Advanced Airbnb Search",
       webLink: "https://www.youtube.com/watch?v=HGyfS9g3qUM",
-      androidLink: ""),
+      androidLink:
+          "https://chromewebstore.google.com/detail/hack-airbnb/pgfapcopccjcmbbdmhoneiggnggfcelg"),
   ProjectUtils(
       image: "assets/projects/MimRoll.png",
       title: "Mim Roll Kabob",
       subtitle: "Mediterranean International Meal",
-      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),      
+      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),
   ProjectUtils(
       image: "assets/projects/BisimKart.png",
       title: "BisimKart",
