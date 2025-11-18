@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
-import 'package:my_portfolio/constants/size.dart';
 import 'package:my_portfolio/constants/social_links.dart';
-import 'package:my_portfolio/widgets/custom_text_field.dart';
 import 'dart:js' as js;
 
 class ContactSection extends StatelessWidget {
@@ -22,55 +20,6 @@ class ContactSection extends StatelessWidget {
               fontWeight: FontWeight.bold,
               fontSize: 24,
               color: CustomColor.whitePrimary,
-            ),
-          ),
-          const SizedBox(
-            height: 50,
-          ),
-          //Text Fields
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-              maxHeight: 100,
-            ),
-            child: LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth > kMinDesktopWidth) {
-                return buildNameEmailFieldDesktop();
-              }
-              return buildNameEmailFieldMobile();
-            }),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          //message
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-            ),
-            child: const CustomTextField(
-              hintText: "Your message",
-              maxLines: 15,
-            ),
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          //send button
-          ConstrainedBox(
-            constraints: const BoxConstraints(
-              maxWidth: 700,
-            ),
-            child: SizedBox(
-              width: double.maxFinite,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: CustomColor.yellowPrimary,
-                  foregroundColor: CustomColor.whitePrimary,
-                ),
-                onPressed: () {},
-                child: const Text("Get in Touch"),
-              ),
             ),
           ),
           const SizedBox(
@@ -140,50 +89,6 @@ class ContactSection extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-
-  Column buildNameEmailFieldMobile() {
-    return const Column(
-      children: [
-        //name
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your Name",
-          ),
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        //email
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your email",
-          ),
-        ),
-      ],
-    );
-  }
-
-  Row buildNameEmailFieldDesktop() {
-    return const Row(
-      children: [
-        //name
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your Name",
-          ),
-        ),
-        SizedBox(
-          width: 15,
-        ),
-        //email
-        Flexible(
-          child: CustomTextField(
-            hintText: "Your email",
-          ),
-        ),
-      ],
     );
   }
 }
