@@ -17,20 +17,6 @@ class ProjectUtils {
 }
 
 List<ProjectUtils> workProjects = [
-  ProjectUtils(
-      image: "assets/projects/MimRoll.png",
-      title: "Mim Roll Kabob",
-      subtitle: "Mediterranean International Meal",
-      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/",
-      androidLink: "https://www.mimrollkabob.com/",
-      iosLink: "https://www.mimrollkabob.com/"),
-  ProjectUtils(
-      image: "assets/projects/BisimKart.png",
-      title: "BisimKart",
-      subtitle: "Downloadable sim cards (esim) for all travelers.",
-      webLink: "https://www.bisimkart.com/",
-      androidLink: "https://www.bisimkart.com/",
-      iosLink: "https://www.bisimkart.com/"),
 ];
 
 List<ProjectUtils> hobbyProjects = [
@@ -42,13 +28,8 @@ List<ProjectUtils> hobbyProjects = [
       androidLink:
           "https://chromewebstore.google.com/detail/hack-airbnb/pgfapcopccjcmbbdmhoneiggnggfcelg"),
   ProjectUtils(
-      image: "assets/projects/MimRoll.png",
-      title: "Mim Roll Kabob",
-      subtitle: "Mediterranean International Meal",
-      webLink: "https://developer.nevadawebsolutions.com/mimrollkabob.com/"),
-  ProjectUtils(
-      image: "assets/projects/BisimKart.png",
-      title: "BisimKart",
-      subtitle: "Downloadable sim cards (esim) for all travelers.",
-      webLink: "https://www.bisimkart.com/"),
+      image: "assets/projects/inspection.png",
+      title: "Restaurants Naughty List",
+      subtitle: "Recent Health Inspection Reports by SNHD",
+      webLink: "https://restaurants.nevadawebsolutions.com/"),
 ];
