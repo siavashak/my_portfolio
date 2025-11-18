@@ -28,7 +28,7 @@ List<ProjectUtils> hobbyProjects = [
       androidLink:
           "https://chromewebstore.google.com/detail/hack-airbnb/pgfapcopccjcmbbdmhoneiggnggfcelg"),
   ProjectUtils(
-      image: "assets/projects/inspection.png",
+      image: "assets/projects/cockroach.png",
       title: "Restaurants Naughty List",
       subtitle: "Recent Health Inspection Reports by SNHD",
       webLink: "https://restaurants.nevadawebsolutions.com/"),
