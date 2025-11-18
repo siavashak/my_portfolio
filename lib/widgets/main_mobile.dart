@@ -42,18 +42,7 @@ class MainMobile extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: CustomColor.whitePrimary,
                   )),
-              const SizedBox(height: 10),
-              SizedBox(
-                width: 210,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: CustomColor.yellowPrimary,
-                    foregroundColor: CustomColor.whitePrimary,
-                  ),
-                  onPressed: () {},
-                  child: const Text("Get in Touch"),
-                ),
-              )
+              const SizedBox(height: 10)
             ]));
   }
 }

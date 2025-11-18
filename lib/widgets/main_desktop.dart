@@ -19,10 +19,10 @@ class MainDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Column(
+          const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text(
+              Text(
                   "Hi, \nI'm Siavash. \nWelcome to my portfolio \nhosted on AWS S3 (WIP).",
                   style: TextStyle(
                     fontSize: 30.0,
@@ -30,18 +30,7 @@ class MainDesktop extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: CustomColor.whitePrimary,
                   )),
-              const SizedBox(height: 15),
-              SizedBox(
-                width: 300,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: CustomColor.yellowPrimary,
-                    foregroundColor: CustomColor.whitePrimary,
-                  ),
-                  onPressed: () {},
-                  child: const Text("Get in Touch"),
-                ),
-              )
+              SizedBox(height: 15),              
             ],
           ),
           Image.asset(
