@@ -33,7 +33,7 @@ List<ProjectUtils> hobbyProjects = [
       subtitle: "Recent Health Inspection Reports by SNHD",
       webLink: "https://restaurants.nevadawebsolutions.com/"),
   ProjectUtils(
-      image: "assets/skills/JavaScript.png",
+      image: "assets/skills/CSharp.png",
       title: "Vegas 50 Tech Roles",
       subtitle: "Top 50 Tech Roles in Las Vegas",
       webLink: "https://vegastechjobs.nevadawebsolutions.com/"),
