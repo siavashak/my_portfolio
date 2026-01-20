@@ -37,4 +37,9 @@ List<ProjectUtils> hobbyProjects = [
       title: "Vegas 50 Tech Roles",
       subtitle: "Top 50 Tech Roles in Las Vegas",
       webLink: "https://vegastechjobs.nevadawebsolutions.com/"),
+  ProjectUtils(
+      image: "assets/skills/google.png",
+      title: "Top Review on Google Maps",
+      subtitle: "The relevance is set by Google!",
+      webLink: "https://googlemapstopreview.nevadawebsolutions.com/"),  
 ];
