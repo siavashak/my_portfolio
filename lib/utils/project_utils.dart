@@ -43,7 +43,7 @@ List<ProjectUtils> hobbyProjects = [
       subtitle: "The relevance is set by Google!",
       webLink: "https://googlemapstopreview.nevadawebsolutions.com/"),  
   ProjectUtils(
-      image: "assets/skills/layover.png",
+      image: "assets/projects/layover.png",
       title: "Find Layover Cities",
       subtitle: "The leg that might want to lose!!",
       webLink: "https://layoverfinder.nevadawebsolutions.com/"),    
