@@ -19,7 +19,7 @@ const List<Map> skillItems = [
     "title": ".NET",
   },
   {
-    "img": "assets/skills/C#-(CSharp).png",
+    "img": "assets/skills/CSharp.png",
     "title": "C#",
   },
   {
