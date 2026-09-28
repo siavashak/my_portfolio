@@ -1,0 +1,58 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the source code
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Step 2: Set up Flutter environment
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.3'
+
+    # Step 3: Install dependencies and build Flutter web app
+    - name: Install dependencies and build
+      run: |
+        flutter pub get
+        flutter build web --release
+
+    # Step 4: Write CNAME file into the built output directory
+    - name: Add CNAME for custom domain
+      run: echo "developer.nevadawebsolutions.com" > build/web/CNAME
+
+    # Step 5: Configure GitHub Pages metadata
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    # Step 6: Upload Flutter web build folder as artifact
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'build/web'
+
+    # Step 7: Deploy artifact to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
